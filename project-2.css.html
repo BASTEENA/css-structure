@@ -4,7 +4,7 @@
         <meta name="viewport" content="width=device-width" initial-scale="1">
         <style>
             * {
-                box-sizing:border-box;
+                box-sizing: border-box;
                 font-family: Georgia, 'Times New Roman', Times, serif;
                 font-style: oblique;
                 font-size: 20px;
@@ -17,6 +17,9 @@
             .row1{
                 background-color: green;
                 display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+
             
             }
             .row1 .col1{
@@ -28,7 +31,6 @@
             .row1 .col2, .col3, .col4, .col5, .col6{
                 background-color: green;
                 margin:20px;
-                justify-content: space-evenly;
             }
             .row2{
                 background-color:black;
@@ -38,6 +40,8 @@
                 padding-right: 50px;
                 padding-top: 20px;
                 padding-bottom: 20px;
+                justify-content: space-around;
+                flex-wrap: wrap;
             }
             .row2 .col10{
                 background-color: purple;
@@ -46,7 +50,7 @@
             .row2 .col11, .col7, .col8, .col9{
                 background-color: pink;
                 margin: 1px;
-                justify-content: space-around;
+                
                 width: 15%;    
             }
             .row2 .col11{
@@ -65,7 +69,8 @@
                 background-color: black;
                 color: whitesmoke;
                 display:flex;
-                padding: 10px; 
+                padding: 10px;
+                flex-wrap: wrap; 
             }
             .row3 .col12{
                 width: 30%;
@@ -84,9 +89,11 @@
                 display:flex;
                 padding: 15px;
                 justify-content: space-around;
+                flex-wrap: wrap;
             }
             .row5{
                 display: flex;
+                flex-wrap: wrap;
             }
             .row5 .col18{
                 background-color: purple;
@@ -110,10 +117,14 @@
             .row10{
                 background-color: skyblue;
                 display: flex;
+                flex-wrap: wrap;
             
             }
             .row10 .col21, .col22{
                 width: 50%;
+            }
+            .col{
+                padding:10px;
             }
             .text{
                 color:red;
@@ -121,18 +132,33 @@
             .clear{
                 clear:both;
             }
-            @media only screen and(max-width:576px)
+            @media only screen and (max-width: 576px){
+                .row1 .col1, {
+                   width:100%;
+                }
+                .row1 .col2, .col3, .col4, .col5, .col6{
+                    width:40%;
+                }
+                .row2 .col10{
+                    width:100%;
+                }
+                .row2 .col11, .col7, .col8, .col9{
+                    width:35%;
+                }
+                .row5 .col18{
+                    width:50%;
+                }
+                .row5 .col19{
+                    width:50%;
+                }
+                .row5 .col20{
+                    width:100%;
+                }
+                
+                
+            }
 
-            .row2 .col7, .col8, .col9, .col10, col11{
             
-            }
-
-            .row3 .col12, .col13, .col14{
-                width:100%;
-            }
-            .row4 .col14, .col15, .col16, .col17{
-                width:100%;
-            }
 
             
         </style>
@@ -151,10 +177,18 @@
             <div class="col6">Contact</div>
         </div></header>
         <div class="row2">
-            <div class="col11">img</div>
-            <div class="col7">image2</div>
-            <div class="col8">image3</div>
-            <div class="col9">image4</div>
+            <div class="col11">
+                <img src="flower20.jpg">
+            </div>
+            <div class="col7">
+                <img src="flower20.jpg">
+            </div>
+            <div class="col8">
+                <img src="flower20.jpg">
+            </div>
+            <div class="col9">
+                <img src="flower20.jpg">
+            </div>
             <div class="col10" align="center">
                 <img src="flower6.jpg">
             </div>
@@ -221,22 +255,46 @@
                 </ul>
                 </div>
                 <div class="col20">
-                  <div><p align="left">  Latest Photoshoots</p></div>
+                  <h4> Latest Photoshoots</h4>
                    <div>
-                    <div >img1</div>
-                    <div >img2</div>
-                    <div >img3</div>
-                    <div >img4</div></div>
+                    <div class="col">
+                        <img width=50% src="flower12.jpg">
+                    </div>
+                    <div class="col">
+                        <img width=50% src="flower12.jpg">
+                    </div>
+                    <div class="col">
+                        <img width=50% src="flower12.jpg">
+                    </div>
+                    <div class="col">
+                        <img width=50% src="flower12.jpg">
+                    </div></div>
                     <div>
-                    <div >img5</div>
-                    <div >img6</div>
-                    <div >img7</div>
-                    <div >img8</div></div>
+                    <div class="col">
+                        <img width=50% src="flower14.jpg">
+                    </div>
+                    <div class="col">
+                        <img width=50% src="flower14.jpg">
+                    </div>
+                    <div class="col">
+                        <img width=50% src="flower14.jpg">
+                    </div>
+                    <div class="col">
+                        <img width=50% src="flower14.jpg">
+                    </div></div>
                     <div>
-                    <div>img9</div>
-                    <div>img10</div>
-                    <div>img11</div>
-                    <div>img12</div>
+                    <div class="col">
+                        <img width=50% src="flower13.jpg">
+                    </div>
+                    <div class="col">
+                        <img width=50% src="flower13.jpg">
+                    </div>
+                    <div class="col">
+                        <img width=50% src="flower13.jpg">
+                    </div>
+                    <div class="col">
+                        <img width=50% src="flower13.jpg">
+                    </div>
                     </div>
                 </div></div>
                 <footer>
