@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width" initial-scale="1">
+        <style>
+            * {
+                box-sizing: border-box;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-weight: bold;
+                font-style: italic;
+                font-size: large;
+                font-variant:initial;
+            }
+            img {
+                max-width: 100%;
+            }
+            
+            .lside{
+                background-color: rgb(99, 97, 97);
+                position: fixed;
+                height: 100vh;
+                width: 30%;
+            }
+            .row1{
+                margin: 0px;
+                padding-top: 25px;
+                padding-bottom: 25px;
+                display:flex;
+            }
+            .row1 .col1{
+                background-color: grey;
+                width:50%;
+            }
+            .font{
+                font-weight: bolder;
+                font-size: xx-large;
+            }
+            .row1 .col2{
+                background-color: grey;
+                width:50%;
+                color: rgb(4, 20, 66);
+            }
+            .row2 {
+                background-color: rgb(59, 58, 58);
+                padding: 3px;
+                margin: 1px;
+                border-color: darkgray;
+                color: white;
+            }
+            .row3{
+                width: 70%;
+                background-color: white;
+                float: right;
+                padding: 0px;
+            }
+            .row3 h2{
+                margin-left: 375px;
+                position:absolute;
+                margin-top: 200px;
+                color: white;
+            }
+            .row3 p{
+                margin-left: 300px;
+                position: absolute;
+                margin-top: 300px;
+                color: white;
+            }
+            .row4{
+                background-color: white;
+                color: rgb(115, 115, 236);
+                width: 70%;
+                float: right;
+                padding: 10px;
+            }
+            .row5{
+                background-color: white;
+                color: rgb(182, 182, 36);
+                float: right;
+                width: 70%;
+            }
+            .row6{
+                float: left;
+                width: 13%;
+                background-color: rgb(182, 182, 36);
+                color: white;
+                padding: 10px;
+            }
+            .row7{
+                float: left;
+                width: 100%;
+                background-color: white;
+            }
+            .row7 .col1, .col2, .col3{
+                display: inline-block;
+                padding: 15px;
+                margin-left: 20px;
+                width: 30%;
+            }
+            .row8{
+                background-color:white;
+                float: left;
+                width:100%;
+                padding:5px;
+                color: rgb(178, 126, 226);
+            }
+            .row8 .col1{
+                width:65%;
+            }
+            .row8 .col2{
+                background-color: white;
+                float:right;
+            }
+            .row9{
+                background-color:white;
+                float:left;
+                width:100%;
+
+            }
+            .row10{
+                float: left;
+                width: 13%;
+                background-color: rgb(182, 182, 36);
+                color: white;
+                padding: 10px;
+            }
+            .row11{
+                background-color:white;
+                width: 100%;
+                justify-content: space-around;
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+            .row11 .col4, .col5, .col6{
+                background-color: purple;
+                width: 30%;
+                padding: 3px;
+                display: inline-block;
+                color: white;
+            }
+           /* .row11 .col4{
+                margin-left: -19px; */
+            }
+            .row13{
+                background-color:white;
+                float: left;
+                width:100%;
+            }
+            .row14{
+                float: left;
+                width:13%;
+                background-color: rgb(182, 182, 36);
+                color: white;
+                padding: 10px;
+            }
+            .row12{
+                padding: 5px;
+                background-color: white;
+                float: left;
+            }
+            .row12 .col11{
+                background-color: white;
+                width: 55%;
+                padding: 35px;
+            }
+            .row15{
+                background-color: white;
+                display: flex;
+                flex-wrap: wrap;
+                color: darkred;
+                margin: 10px;
+                justify-content: space-around;
+            }
+            .row15 .col12, .col13, .col14{
+                background-color: white;
+                width: 30%;
+                padding: 30px;
+
+            }
+            .row16{
+                background-color: white;
+                display: flex;
+                flex-wrap: wrap;
+                color: darkred;
+                margin: 10px;
+                justify-content: space-around;
+            }
+            .row16 .col15, .col16, .col17{
+                background-color: white;
+                width: 30%;
+                padding: 30px;
+                margin-left: -15px;
+            }
+            .row17{
+                background-color: yellowgreen;
+                width: 20%;
+                color:white;
+                padding: 2px;
+                align: centre;
+                margin-left: 250px;
+            }
+            .row18{
+                background-color:white;
+                float: left;
+                width:100%;
+            }
+            .row19{
+                float: left;
+                width:13%;
+                background-color: rgb(182, 182, 36);
+                color: white;
+                padding: 10px;
+                
+            }
+            .row20{
+                background-color: white;
+                width:100%;
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+            .row21{
+                background-color: gray;
+                float:left;
+                width: 100%;
+                padding: 5px;
+                align-content: center;
+            }
+            
+            .clear{
+                clear:both;
+            }
+            @media only screen and (max-width: 576px){
+                .row1 .col1{
+                    width:100%;
+                }
+                .row1 .col2{
+                    width:100%;
+                }
+                .row2 {
+                    width:50%;
+                }
+                .row3 {
+                    width:50%;
+                }
+            }
+           
+        </style>
+    </head>
+    <body>
+        <lside>
+        <div class="lside">
+    <div class="row1">
+        <div class="col1">
+           <img align="middle" src="logistic-images.1.jpg">
+        </div> 
+        <div class="col2">
+            <p align="middle" class="font">FLOMIC</p>
+            <p align="middle">LOGISTICS PVT LTD</p>
+        </div>
+        </div>
+        <div class="clear">
+                
+        </div>
+        <div class="row2">
+            <p align="middle"> HOME </p>
+        </div>
+        <div class="row2">
+            <p align="middle"> ABOUT US </p>
+        </div>
+        <div class="row2">
+            <p align="middle"> SERVICES </p>
+        </div>
+        <div class="row2">
+            <p align="middle"> PORTFOLIO </p>
+        </div>
+        <div class="row2">
+            <p align="middle"> CONTACT </p>
+        </div>
+    </div>
+    <div class="clear">
+                
+    </div>
+    </lside>
+    
+        <div class="row3">
+            <h2 class="font">RESPONSIVE LAYOUT</h2>
+            <p>This content is of the responsive LayoutThis content is of <br>Layout to be describedLayout to be described</p>
+            <img width="100%" src="scenary-1.jpg">
+        </div>
+        <div class="clear">
+                
+        </div>
+        <div class="row4">
+            <p align="middle">WELCOME TO TEMPLATE<br>kjjnfojwofndkjn  skdfwhfefn kjdhfowehfo kafhwehf kajhfohef</p>
+        </div>
+        <div class="clear">
+                
+        </div>
+        <div class="row5">
+            <hr>
+            <div class="clear">
+                
+            </div>
+            <div class="row6">
+                ABOUT US
+            </div>
+            <div class="clear">
+                
+            </div>
+            <div class="row7">
+                <div class=col1>
+                <img width="100%" align="centre" src="rosedawson.jpg">
+                    <p align="middle">ROSE DAWSON</p>
+                    <p align="middle">kjhf kjsdfjweh kjoeorj</p>
+            </div>
+            <div class=col2>
+                <img width="100%" align="centre" src="rosedawson.jpg">
+                    <p align="middle">ROSE DAWSON</p>
+                    <p align="middle">kjhf kjsdfjweh kjoeorj</p>
+            </div>
+            <div class=col3>
+                <img width="100%" align="centre" src="rosedawson.jpg">
+                    <p align="middle">ROSE DAWSON</p>
+                    <p align="middle">kjhf kjsdfjweh kjoeorj</p>
+            </div>
+        
+            <div class="clear">
+
+            </div>
+            <div class="row8">
+                <div class="col1">
+                <p>OUR MANAGEMENT TEAM</p>
+                <p>A management information system (MIS) is a computer system consisting of hardware and software that serves as the backbone of an organization's operations. An MIS gathers data from multiple online systems, analyzes the information, and reports data to aid in management decision-making.</p><br>
+                <p>A management information system (MIS) is a computer system consisting of hardware and software that serves as the backbone of an organization's operations. An MIS gathers data from multiple online systems, analyzes the information, and reports data to aid in management decision-making.</p>
+            </div>
+            <div class="col2">
+                <img align="middle" src="apple-desktop.jpg">
+            </div>
+            <div class="clear">
+                    
+            </div>
+            <div class="row9">
+                <hr>
+                <div class="clear">
+                    
+                </div>
+                <div class="row10">
+                    SERVICES
+                </div>
+                <div class="clear">
+                    
+                </div>
+            <div class="row11">
+                <div class="col4">
+                    <p align="middle">THE BEST<br>
+                    SUPPORT EVER
+                </div>
+                <div class="col5">
+                    <p align="middle">FULLY<br>
+                    RESPONSIVE DESIGN</p>
+                </div>
+                <div class="col6">
+                    <p align="middle">UNLIMITED<br>
+                    LAYOUTS OPTIONS</p>
+            </div>
+            <div class="clear">
+
+            </div>
+            <div class="row12">
+                <div class="col11">
+                <p>OUR SKILLS</p>
+                <p>A management information system (MIS) is a computer system consisting of hardware and software that serves as the backbone of an organization's operations. An MIS gathers data from multiple online systems, analyzes the information, and reports data to aid in management decision-making.</p><br>
+                <p>A management information system (MIS) is a computer system consisting of hardware and software that serves as the backbone of an organization's operations. An MIS gathers data from multiple online systems, analyzes the information, and reports data to aid in management decision-making.</p>
+                </div>
+                
+            </div>
+            <div class="clear">
+                    
+            </div>
+            <div class="row9">
+                <hr>
+                <div class="clear">
+                    
+                </div>
+                <div class="row10">
+                    PORTFOLIO
+                </div>
+                <div class="clear">
+                    
+                </div>
+                <div class="row15">
+                    <div class="col12">
+                        <img src="rosedawson.jpg">
+                        FANTASY
+                    </div>
+                    <div class="col13">
+                        <img src="rosedawson.jpg">
+                        BOTANY
+                    </div>
+                    <div class="col14">
+                        <img src="rosedawson.jpg">
+                        UNIVERSE
+                    </div>
+                    <div class="clear">
+                    
+                    </div>
+                    <div class="row16">
+                        <div class="col15">
+                            <img src="rosedawson.jpg">
+                            FANTASY
+                        </div>
+                        <div class="col16">
+                            <img src="rosedawson.jpg">
+                            BOTANY
+                        </div>
+                        <div class="col17">
+                            <img src="rosedawson.jpg">
+                            UNIVERSE
+                        </div>
+                        <div class="clear">
+
+                        </div>
+                        <div align="centre" class="row17">
+                           <p align="middle"> LOAD MORE </p>
+                        </div>
+                        <div class="clear">
+
+                        </div>
+                        <div class="row18">
+                            <hr>
+                            <div class="clear">
+                                
+                            </div>
+                            <div class="row19">
+                                CONTACT US
+                            </div>
+                            <div class="clear">
+
+                            </div>
+                            <div class="row20">
+                                <img width="100%" src="worldmap.jpg">
+                            </div>
+                            <div class="clear">
+
+                            </div>
+                            
+                                
+                            Name<br>
+                            <input type="text"><br>
+                            Email<br>
+                            <input type="email"><br>
+                            Subject<br>
+                            <input type="text"><br>
+                            Message<br>
+                            <input type="text"><br>
+                            SEND MESSAGE
+                            <input type="submit"><br>
+                            <div class="row21">
+                                <p alight="middle">Copyright@2015</p>
+                            </div>
+                            <div class="clear">
+
+                            </div>      
+                </div>
+    </body>
+</html>
